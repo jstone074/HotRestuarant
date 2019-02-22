@@ -51,7 +51,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput4">Unqiue ID</label>
-                <input type="search" class="form-control" id="Unqiue ID" placeholder="123456789">
+                <input type="search" class="form-control" id="id" placeholder="123456789">
             </div>
 
             <div class="row">
@@ -64,7 +64,45 @@
 
     </div>
 
+    <script>"text/javascript"
+    
+    $("#submit").on("click", (customer) => {
 
+        customer.preventDefault();
+
+        const reservation = {
+
+            name: $("#name").val().trim(),
+            phonenumber: $("#phone").val().trim(),
+            numberOfGuests: $("#guests").val().trim(),
+            time: $("#time").val().trim(),
+            emailaddress: $("#email").val().trim(),
+            id: $("#id").val().trim()
+        };
+
+    console.log(reservation);
+
+    // $.post("/api/view", reservation, (data) =>{
+
+
+    //    $("#name").val(""),
+    //    $("#phone").val(""),
+    //    $("#guests").val(""),
+    //    $("#time").val(""),
+    //    $("#email").val(""),
+    //    $("#id").val("")
+
+    // });
+
+    });
+
+
+
+
+
+    
+    
+    </script>
 </body>
 
 </html>
