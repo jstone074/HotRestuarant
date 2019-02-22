@@ -4,10 +4,10 @@ var path = require("path");
 //HTML Get requests
 //handles users visiting the page
 module.exports = function(app) {
-    app.get("/tables", (req, res) => {
+    app.get("/view", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/view.html"));
     });
-    app.get("/reserve", (req, res) => {
+    app.get("/add", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/add.html"));
     });
     app.get("*", (req, res) => {
