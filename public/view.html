@@ -20,25 +20,57 @@
             <h4>View Up-To-Date Reservations Below</h4>
             <hr>
             <a href="/index"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> Home</button></a>
-            <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> View Resverations</button></a>
+            <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span> View
+                    Resverations</button></a>
         </div>
 
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Table Name</th>
-                    <th scope="col">Number of Guests</th>
-                    <th scope="col">Estimated Time of Arrival</th>
-                </tr>
-            </thead>
-            <tbody id="table">
-                <tr>
-                    <td scope="row" id="tableName">Jimmy Eat Dinner (test)</th>
-                    <td id="numberOfGuests">20</td>
-                    <td id="eta">9:30pm</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="container" id="current">
+            <div class="row">
+                <h4 class="top col-12">
+                    - Current Table Reservations -
+                </h4>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Table Name</th>
+                        <th scope="col">Number of Guests</th>
+                        <th scope="col">Estimated Time of Arrival</th>
+                    </tr>
+                </thead>
+                <tbody id="tableCurrent">
+                    <tr>
+                        <td scope="row" id="tableName">Jimmy Eat Dinner (test)</th>
+                        <td id="numberOfGuests">20</td>
+                        <td id="eta">9:30pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container" id="wait">
+            <div class="row">
+                <h4 class="top col-12">
+                    - Wait List Reservations -
+                </h4>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Table Name</th>
+                        <th scope="col">Number of Guests</th>
+                        <th scope="col">Estimated Time of Arrival</th>
+                    </tr>
+                </thead>
+                <tbody id="tableWait">
+                    <tr>
+                        <td scope="row" id="tableName">Hungry Hungry Haydn (test)</th>
+                        <td id="numberOfGuests">1</td>
+                        <td id="eta">9:22pm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 
