@@ -82,17 +82,16 @@
 
     console.log(reservation);
 
-    // $.post("/api/view", reservation, (data) =>{
+    $.post("/api/tables", reservation, (data) =>{
 
+       $("#name").val(""),
+       $("#phone").val(""),
+       $("#guests").val(""),
+       $("#time").val(""),
+       $("#email").val(""),
+       $("#id").val("")
 
-    //    $("#name").val(""),
-    //    $("#phone").val(""),
-    //    $("#guests").val(""),
-    //    $("#time").val(""),
-    //    $("#email").val(""),
-    //    $("#id").val("")
-
-    // });
+    });
 
     });
 
