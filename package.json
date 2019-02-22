@@ -1,0 +1,23 @@
+{
+  "name": "hotrestaurant",
+  "version": "1.0.0",
+  "description": "reservations for a restaurant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstone074/HotRestuarant.git"
+  },
+  "author": "haydn, jimmy, dylan, don",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstone074/HotRestuarant/issues"
+  },
+  "homepage": "https://github.com/jstone074/HotRestuarant#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
