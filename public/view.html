@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars - Express</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Current Table Resverations</h1>
+            <h3>View Up-To-Date Reservations Below</h3>
+            <hr>
+            <a href="/index"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span>Home</button></a>
+            <a href="/add"><button class="btn btn-danger btn-lg"><span class="fa fa-plus"></span>View Resverations</button></a>
+        </div>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Table Name</th>
+                    <th scope="col">Number of Guests</th>
+                    <th scope="col">Estimated Time of Arrival</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <td scope="row" id="tableName">Jimmy Eat Dinner (test)</th>
+                    <td id="numberOfGuests">20</td>
+                    <td id="eta">9:30pm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
